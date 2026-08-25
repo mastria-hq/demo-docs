@@ -1,0 +1,18 @@
+---
+title: Configuration
+description: Core settings and their defaults.
+---
+
+## Task retries
+
+<ParamField path="retries" type="integer" default="3">
+The number of times the scheduler retries a failed task before marking
+it failed. The default is 3 retries.
+</ParamField>
+
+## Example DAGs
+
+<ParamField path="load_examples" type="boolean" default="True">
+Set `load_examples` to `False` in `airflow.cfg` to hide the example
+DAGs from the UI.
+</ParamField>
